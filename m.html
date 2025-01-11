@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../logo picture/Monogram - AC __ FINAL.jpg">
+    <title>Website with Modal Login</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="m.css">
+</head>
+
+<body>
+    <!-- Start Screen Container -->
+    <div id="start-container" style="display: block;">
+        <div id="welcome-screen" class="page">
+            <video autoplay muted loop id="bg-video" playsinline>
+                <source src="../background image for 1st page/purple-sunset2.1920x1080.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="logo-container">
+                <img src="../logo picture/Monogram - AC __ FINAL.jpg" alt="Website Logo">
+            </div>
+            <button id="start-btn">Get Started</button>
+            <div class="social-icons">
+                <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+                <a href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Login Container -->
+    <div id="login-container" style="display: none;">
+        <video autoplay muted loop id="bg-video" playsinline>
+            <source src="../background image for 1st page/purple-sunset2.1920x1080.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div id="id01" class="modal">
+            <form class="modal-content animate" id="loginForm">
+                <div class="imgcontainer">
+                    <span class="close" title="Close Modal">&times;</span>
+                    <img src="img_avatar2.png" alt="Avatar" class="avatar">
+                </div>
+
+                <div class="container">
+                    <div class="form-group">
+                        <input type="text" id="uname" required autocomplete="username">
+                        <label for="uname">Username</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="password" id="psw" required autocomplete="current-password">
+                        <label for="psw">Password</label>
+                    </div>
+                    <button type="submit" id="loginBtn">Login</button>
+                </div>
+
+                <div class="container footer">
+                    <span class="psw">New user? <a href="#" id="signupLink">Sign Up</a></span>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Sign Up Container -->
+    <div id="signup-container" style="display: none;">
+        <video autoplay muted loop id="bg-video" playsinline>
+            <source src="../background image for 1st page/purple-sunset2.1920x1080.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div id="id02" class="modal">
+            <form class="modal-content animate" id="signupForm">
+                <div class="imgcontainer">
+                    <span class="close" title="Close Modal">&times;</span>
+                    <img src="img_avatar2.png" alt="Avatar" class="avatar">
+                </div>
+
+                <div class="container">
+                    <div class="form-group">
+                        <input type="text" id="newUsername" required autocomplete="username">
+                        <label for="newUsername">Username</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" required autocomplete="email">
+                        <label for="email">Email</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="password" id="newPassword" required autocomplete="new-password">
+                        <label for="newPassword">Password</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="password" id="confirmPassword" required autocomplete="new-password">
+                        <label for="confirmPassword">Confirm Password</label>
+                    </div>
+                    <button type="submit" id="signupBtn">Sign Up</button>
+                </div>
+
+                <div class="container footer">
+                    <span class="psw">Already registered? <a href="#" id="loginLink">Login</a></span>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="m.js"></script>
+</body>
+</html>
